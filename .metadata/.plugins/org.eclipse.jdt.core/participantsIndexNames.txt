@@ -5,7 +5,11 @@ C:\Users\concepcion.marquez\Desktop\BabelCamp\wsEclipse\.metadata\.plugins\org.e
 \02_bucador_spring\src\main\java
 C:\Users\concepcion.marquez\Desktop\BabelCamp\wsEclipse\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\3136542912.index
 \03_tienda_spring\src\main\java
+C:\Users\concepcion.marquez\Desktop\BabelCamp\wsEclipse\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\1774032412.index
+\05_tienda_config_clases\src\main\java
 C:\Users\concepcion.marquez\Desktop\BabelCamp\wsEclipse\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\3213696477.index
 \01_buscador_sin_spring_profe\src\main\java
 C:\Users\concepcion.marquez\Desktop\BabelCamp\wsEclipse\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\1004419039.index
 \02_bucador_spring\src\main\java
+C:\Users\concepcion.marquez\Desktop\BabelCamp\wsEclipse\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\3233913509.index
+\04_tienda_bbdd\src\main\java
