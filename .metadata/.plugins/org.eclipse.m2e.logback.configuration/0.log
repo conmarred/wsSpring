@@ -973,3 +973,4 @@
 2022-04-19 09:38:26,530 [Worker-54: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
 2022-04-19 09:38:26,531 [Worker-54: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\concepcion.marquez\Desktop\BabelCamp\wsEclipse\03_tienda_spring\src\main\resources
 2022-04-19 09:38:26,532 [Worker-54: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2022-04-19 09:38:26,532 [Worker-54: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\concepcion.marquez\Desktop\BabelCamp\wsEclipse\03_tienda_spring\src\test\resources
