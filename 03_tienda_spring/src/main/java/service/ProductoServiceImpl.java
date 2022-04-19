@@ -11,12 +11,12 @@ import model.Producto;
 @Service
 public class ProductoServiceImpl implements ProductoService {
 
-	static ArrayList<Producto> productos=new ArrayList<>(List.of(new Producto("vino","alimentacion",8.4,25),
-			new Producto("leche","alimentacion",1.2,70),
-			new Producto("cable usb","informatica",5.6,30),
-			new Producto("arroz","alimentacion",3.1,16),
+	static ArrayList<Producto> productos=new ArrayList<>(List.of(new Producto("vino","alimentación",8.4,25),
+			new Producto("leche","alimentación",1.2,70),
+			new Producto("cable usb","informática",5.6,30),
+			new Producto("arroz","alimentación",3.1,16),
 			new Producto("silla","hogar",30.6,10),
-			new Producto("monitor","informatica",125.0,5),
+			new Producto("monitor","informática",125.0,5),
 			new Producto("escritorio","hogar",230.0,4)
 			));
 
