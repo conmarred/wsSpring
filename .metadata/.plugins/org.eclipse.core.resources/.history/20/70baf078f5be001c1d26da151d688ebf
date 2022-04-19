@@ -1,0 +1,6 @@
+package controller;
+
+@controller
+public class BuscadorController {
+
+}

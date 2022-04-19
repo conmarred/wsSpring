@@ -1,0 +1,11 @@
+INDEX VERSION 1.131
+C:\Users\concepcion.marquez\Desktop\BabelCamp\wsEclipse\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\2488829483.index
+\02_buscador_spring\src\main\java
+C:\Users\concepcion.marquez\Desktop\BabelCamp\wsEclipse\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\1813328393.index
+\02_bucador_spring\src\main\java
+C:\Users\concepcion.marquez\Desktop\BabelCamp\wsEclipse\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\3136542912.index
+\03_tienda_spring\src\main\java
+C:\Users\concepcion.marquez\Desktop\BabelCamp\wsEclipse\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\3213696477.index
+\01_buscador_sin_spring_profe\src\main\java
+C:\Users\concepcion.marquez\Desktop\BabelCamp\wsEclipse\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\1004419039.index
+\02_bucador_spring\src\main\java

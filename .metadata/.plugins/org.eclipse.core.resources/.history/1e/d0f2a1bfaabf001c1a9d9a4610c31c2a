@@ -1,0 +1,35 @@
+package controller;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.ModelAttribute;
+import org.springframework.web.bind.annotation.PostMapping;
+
+import model.Producto;
+import service.ProductoService;
+
+@Controller
+public class ProductoController {
+
+	@Autowired
+	ProductoService productoService;
+	
+	@PostMapping(value="Alta")
+	public String alta(@ModelAttribute("producto") Producto producto) {
+		
+		Producto p1 = producto;
+		productoService.alta(p1);
+		
+		return "datos";
+	}
+	
+	@PostMapping(value="Eliminar")
+	public String eliminar(@ModelAttribute("producto") Producto producto) {
+		
+		Producto p1 = producto;
+		productoService.eliminar(p1);
+		
+		return "datos";
+	}
+	
+}

@@ -1,0 +1,13 @@
+package service;
+
+import org.springframework.stereotype.Service;
+
+import model.Pagina;
+
+@Service
+public class NuevaPaginaServiceImpl implements NuevaPaginaService{
+
+	public void nuevaPagina(Pagina pagina) {
+		
+	}
+}

@@ -1,0 +1,29 @@
+package controller;
+
+import java.util.List;
+
+import javax.servlet.http.HttpServletRequest;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.RequestParam;
+
+import model.Pagina;
+import service.NuevaPaginaService;
+
+@Controller
+public class NuevaPaginaController {
+	
+	@Autowired
+	NuevaPaginaService nuevaPaginaService;
+	
+	@GetMapping(value="NuevaPagina")
+	public Pagina nuevaPagina(String direccion, String tematica, String descripcion) {
+		Pagina p1 = new Pagina(direccion, tematica, descripcion);
+		return p1;
+	}
+	
+	
+
+}

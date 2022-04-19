@@ -1,0 +1,10 @@
+package service;
+
+import model.Producto;
+
+public interface ProductoService {
+
+	void alta(Producto producto);
+	
+	void eliminar(Producto producto);
+}

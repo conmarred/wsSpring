@@ -1,0 +1,21 @@
+package service;
+
+import java.util.List;
+
+import org.springframework.stereotype.Service;
+
+import model.Pagina;
+
+
+//Anotación de spring para que spring cree una instancia de la clase
+//It is used to mark the class as a service provider.
+@Service
+public class BuscadorServiceImpl implements BuscadorService {
+
+	@Override
+	public List<Pagina> bucar(String tematica) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+}
