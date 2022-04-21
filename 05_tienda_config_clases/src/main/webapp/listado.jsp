@@ -7,11 +7,15 @@
 <title>Lista de productos</title>
 </head>
 <body>
-	<%ArrayList<Producto> productos=(ArrayList<Producto>)request.getAttribute("productos");%>
+	<%
+	ArrayList<Producto> productos=(ArrayList<Producto>)request.getAttribute("productos");
+	%>
 	<center>
 		<table border='1'><tr><th>Nombre</th><th>Precio</th><th>Stock</th></tr>
-			<%for(int i=0;i<productos.size();i++) {
-				Producto pd=productos.get(i);%>
+			<%
+			for(int i=0;i<productos.size();i++) {
+				Producto pd=productos.get(i);
+			%>
 				<tr><td><%=pd.getNombre()%></td><td><%=pd.getPrecio() %></td><td><%=pd.getStock() %></td></tr>	
 			<%}%>
 		
