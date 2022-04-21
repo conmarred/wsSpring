@@ -1,4 +1,6 @@
 INDEX VERSION 1.131
+C:\Users\concepcion.marquez\Desktop\BabelCamp\wsEclipse\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\1284278541.index
+\08_tienda_persistencia\src\main\java
 C:\Users\concepcion.marquez\Desktop\BabelCamp\wsEclipse\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\1004419039.index
 \02_bucador_spring\src\main\java
 C:\Users\concepcion.marquez\Desktop\BabelCamp\wsEclipse\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\2488829483.index
