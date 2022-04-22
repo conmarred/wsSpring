@@ -1,7 +1,7 @@
 package service;
 
 import java.util.List;
-
+import org.springframework.data.jpa.repository.Query;
 import model.Producto;
 
 public interface ProductoService {
@@ -15,4 +15,7 @@ public interface ProductoService {
 	void modificar(String nombre, Double precio);
 	
 	Producto buscarProductoId(int id);
+	
+	Producto buscarProducto(String nombre);
+
 }
