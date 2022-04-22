@@ -4,6 +4,7 @@ import java.util.List;
 
 import javax.persistence.EntityManager;
 import javax.persistence.PersistenceContext;
+import javax.persistence.Query;
 import javax.persistence.TypedQuery;
 
 import org.springframework.stereotype.Service;
@@ -40,23 +41,16 @@ public class ProductoServiceImpl implements ProductoService {
 		query.setParameter("seccion", seccion);
 		List<Producto> resultado=query.getResultList();
 		return resultado;
-//		String jpql="from productos p where p.seccion=:seccion";
-//		TypedQuery<Producto> query=entityManager.createQuery(jpql,Producto.class);
-//		query.setParameter("seccion", seccion);
-//		List<Producto> resultado=query.getResultList();
-//		return resultado;
 	}
 
 	@Transactional
 	@Override
 	public void modificar(String nombre, Double precio) {
-		TypedQuery<Producto> query=entityManager.createNamedQuery("Producto.findByNombre", Producto.class);
+		String jpql="update Producto p set p.precio=:precio where p.nombre=:nombre";
+		Query query =entityManager.createQuery(jpql);
+		query.setParameter("precio", precio);
 		query.setParameter("nombre", nombre);
-		List<Producto> lsProducto = query.getResultList();
-		Producto aux = lsProducto.size()>0? lsProducto.get(0) : null;
-		
-		
-		entityManager.merge(aux);
+		query.executeUpdate();
 		
 	}
 	

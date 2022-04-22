@@ -6,7 +6,7 @@ import model.Alumno;
 
 public interface AlumnoService {
 
-	void alta(Alumno producto);
+	void alta(Alumno alumno);
 	
 	List<Alumno> listar(String curso);
 	
