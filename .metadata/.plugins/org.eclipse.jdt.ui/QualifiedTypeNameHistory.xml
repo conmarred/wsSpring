@@ -13,13 +13,11 @@
     <fullyQualifiedTypeName name="org.springframework.stereotype.Controller"/>
     <fullyQualifiedTypeName name="service.ProductoService"/>
     <fullyQualifiedTypeName name="java.util.ArrayList"/>
-    <fullyQualifiedTypeName name="java.util.List"/>
     <fullyQualifiedTypeName name="lombok.NoArgsConstructor"/>
     <fullyQualifiedTypeName name="lombok.AllArgsConstructor"/>
     <fullyQualifiedTypeName name="lombok.Setter"/>
     <fullyQualifiedTypeName name="lombok.Getter"/>
     <fullyQualifiedTypeName name="org.springframework.beans.factory.annotation.Autowired"/>
-    <fullyQualifiedTypeName name="model.Producto"/>
     <fullyQualifiedTypeName name="org.springframework.jdbc.core.JdbcTemplate"/>
     <fullyQualifiedTypeName name="javax.sql.DataSource"/>
     <fullyQualifiedTypeName name="org.springframework.context.annotation.Configuration"/>
@@ -46,4 +44,10 @@
     <fullyQualifiedTypeName name="org.springframework.transaction.annotation.Transactional"/>
     <fullyQualifiedTypeName name="org.springframework.web.servlet.config.annotation.EnableWebMvc"/>
     <fullyQualifiedTypeName name="org.springframework.transaction.annotation.EnableTransactionManagement"/>
+    <fullyQualifiedTypeName name="java.util.List"/>
+    <fullyQualifiedTypeName name="com.mysql.cj.Query"/>
+    <fullyQualifiedTypeName name="model.Producto"/>
+    <fullyQualifiedTypeName name="javax.persistence.TypedQuery"/>
+    <fullyQualifiedTypeName name="javax.persistence.NamedQuery"/>
+    <fullyQualifiedTypeName name="javax.persistence.Query"/>
 </qualifiedTypeNameHistroy>
