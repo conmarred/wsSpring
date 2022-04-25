@@ -8255,3 +8255,494 @@ This warning can be switched off on the Team > Git > Confirmations and Warnings 
 
 !ENTRY org.eclipse.m2e.logback.appender 2 0 2022-04-22 15:56:19.597
 !MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+!SESSION 2022-04-25 08:30:58.389 -----------------------------------------------
+eclipse.buildId=4.22.0.I20211124-1800
+java.version=11.0.13
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=es_ES
+Framework arguments:  -product org.eclipse.epp.package.jee.product
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product org.eclipse.epp.package.jee.product
+
+!ENTRY org.springframework.ide.eclipse.bestpractices 4 0 2022-04-25 08:31:00.712
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.springframework.ide.eclipse.bestpractices [1007]
+  Unresolved requirement: Require-Bundle: org.springframework.ide.eclipse.quickfix
+    -> Bundle-SymbolicName: org.springframework.ide.eclipse.quickfix; bundle-version="3.9.15.202012132325-RELEASE"; singleton:="true"
+       org.springframework.ide.eclipse.quickfix [1035]
+         Unresolved requirement: Require-Bundle: org.springframework.web
+           -> Bundle-SymbolicName: org.springframework.web; bundle-version="4.3.23.20190313-CI"
+              org.springframework.web [1049]
+                Unresolved requirement: Import-Package: com.caucho.burlap.client; version="[3.2.1,5.0.0)"; resolution:="optional"
+                Unresolved requirement: Import-Package: com.caucho.burlap.io; version="[3.2.1,5.0.0)"; resolution:="optional"
+                Unresolved requirement: Import-Package: com.caucho.burlap.server; version="[3.2.1,5.0.0)"; resolution:="optional"
+                Unresolved requirement: Import-Package: com.caucho.hessian; version="[3.2.1,5.0.0)"; resolution:="optional"
+                Unresolved requirement: Import-Package: com.caucho.hessian.client; version="[3.2.1,5.0.0)"; resolution:="optional"
+                Unresolved requirement: Import-Package: com.caucho.hessian.io; version="[3.2.1,5.0.0)"; resolution:="optional"
+                Unresolved requirement: Import-Package: com.caucho.hessian.server; version="[3.2.1,5.0.0)"; resolution:="optional"
+                Unresolved requirement: Import-Package: com.fasterxml.jackson.dataformat.xml; version="[2.0.0,3.0.0)"; resolution:="optional"
+                Unresolved requirement: Import-Package: com.googlecode.protobuf.format; resolution:="optional"
+                Unresolved requirement: Import-Package: com.rometools.rome.feed; resolution:="optional"
+                Unresolved requirement: Import-Package: com.rometools.rome.feed.atom; resolution:="optional"
+                Unresolved requirement: Import-Package: com.rometools.rome.feed.rss; resolution:="optional"
+                Unresolved requirement: Import-Package: com.rometools.rome.io; resolution:="optional"
+                Unresolved requirement: Import-Package: com.squareup.okhttp; resolution:="optional"
+                Unresolved requirement: Import-Package: com.squareup.okhttp.internal.http; resolution:="optional"
+                Unresolved requirement: Import-Package: groovy.lang; resolution:="optional"
+                Unresolved requirement: Import-Package: io.netty.bootstrap; resolution:="optional"
+                Unresolved requirement: Import-Package: io.netty.buffer; resolution:="optional"
+                Unresolved requirement: Import-Package: io.netty.channel; resolution:="optional"
+                Unresolved requirement: Import-Package: io.netty.channel.nio; resolution:="optional"
+                Unresolved requirement: Import-Package: io.netty.channel.socket; resolution:="optional"
+                Unresolved requirement: Import-Package: io.netty.channel.socket.nio; resolution:="optional"
+                Unresolved requirement: Import-Package: io.netty.handler.codec.http; resolution:="optional"
+                Unresolved requirement: Import-Package: io.netty.handler.ssl; resolution:="optional"
+                Unresolved requirement: Import-Package: io.netty.handler.timeout; resolution:="optional"
+                Unresolved requirement: Import-Package: io.netty.util.concurrent; resolution:="optional"
+                Unresolved requirement: Import-Package: javax.faces.application; version="[1.1.0,3.0.0)"; resolution:="optional"
+                Unresolved requirement: Import-Package: javax.faces.component; version="[1.1.0,3.0.0)"; resolution:="optional"
+                Unresolved requirement: Import-Package: javax.faces.context; version="[1.1.0,3.0.0)"; resolution:="optional"
+                Unresolved requirement: Import-Package: javax.faces.event; version="[1.1.0,3.0.0)"; resolution:="optional"
+                Unresolved requirement: Import-Package: javax.portlet; version="[2.0.0,3.0.0)"; resolution:="optional"
+                Unresolved requirement: Import-Package: javax.servlet; version="[2.4.0,4.0.0)"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:463)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.lambda$1(ModuleContainer.java:1834)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1829)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1775)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1739)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1661)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:228)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:339)
+
+!ENTRY org.springframework.ide.eclipse.config.ui 4 0 2022-04-25 08:31:00.727
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.springframework.ide.eclipse.config.ui [1024]
+  Unresolved requirement: Require-Bundle: org.springframework.ide.eclipse.wizard
+    -> Bundle-SymbolicName: org.springframework.ide.eclipse.wizard; bundle-version="3.9.15.202012132325-RELEASE"; singleton:="true"
+       org.springframework.ide.eclipse.wizard [1038]
+         Unresolved requirement: Import-Package: org.springframework.http; version="[4.0.0,4.4.0)"
+           -> Export-Package: org.springframework.http; bundle-symbolic-name="org.springframework.web"; bundle-version="4.3.23.20190313-CI"; version="4.3.23.20190313-CI"; uses:="org.springframework.core.io,org.springframework.core.io.support,org.springframework.util"
+              org.springframework.web [1049]
+                Unresolved requirement: Import-Package: com.caucho.burlap.client; version="[3.2.1,5.0.0)"; resolution:="optional"
+                Unresolved requirement: Import-Package: com.caucho.burlap.io; version="[3.2.1,5.0.0)"; resolution:="optional"
+                Unresolved requirement: Import-Package: com.caucho.burlap.server; version="[3.2.1,5.0.0)"; resolution:="optional"
+                Unresolved requirement: Import-Package: com.caucho.hessian; version="[3.2.1,5.0.0)"; resolution:="optional"
+                Unresolved requirement: Import-Package: com.caucho.hessian.client; version="[3.2.1,5.0.0)"; resolution:="optional"
+                Unresolved requirement: Import-Package: com.caucho.hessian.io; version="[3.2.1,5.0.0)"; resolution:="optional"
+                Unresolved requirement: Import-Package: com.caucho.hessian.server; version="[3.2.1,5.0.0)"; resolution:="optional"
+                Unresolved requirement: Import-Package: com.fasterxml.jackson.dataformat.xml; version="[2.0.0,3.0.0)"; resolution:="optional"
+                Unresolved requirement: Import-Package: com.googlecode.protobuf.format; resolution:="optional"
+                Unresolved requirement: Import-Package: com.rometools.rome.feed; resolution:="optional"
+                Unresolved requirement: Import-Package: com.rometools.rome.feed.atom; resolution:="optional"
+                Unresolved requirement: Import-Package: com.rometools.rome.feed.rss; resolution:="optional"
+                Unresolved requirement: Import-Package: com.rometools.rome.io; resolution:="optional"
+                Unresolved requirement: Import-Package: com.squareup.okhttp; resolution:="optional"
+                Unresolved requirement: Import-Package: com.squareup.okhttp.internal.http; resolution:="optional"
+                Unresolved requirement: Import-Package: groovy.lang; resolution:="optional"
+                Unresolved requirement: Import-Package: io.netty.bootstrap; resolution:="optional"
+                Unresolved requirement: Import-Package: io.netty.buffer; resolution:="optional"
+                Unresolved requirement: Import-Package: io.netty.channel; resolution:="optional"
+                Unresolved requirement: Import-Package: io.netty.channel.nio; resolution:="optional"
+                Unresolved requirement: Import-Package: io.netty.channel.socket; resolution:="optional"
+                Unresolved requirement: Import-Package: io.netty.channel.socket.nio; resolution:="optional"
+                Unresolved requirement: Import-Package: io.netty.handler.codec.http; resolution:="optional"
+                Unresolved requirement: Import-Package: io.netty.handler.ssl; resolution:="optional"
+                Unresolved requirement: Import-Package: io.netty.handler.timeout; resolution:="optional"
+                Unresolved requirement: Import-Package: io.netty.util.concurrent; resolution:="optional"
+                Unresolved requirement: Import-Package: javax.faces.application; version="[1.1.0,3.0.0)"; resolution:="optional"
+                Unresolved requirement: Import-Package: javax.faces.component; version="[1.1.0,3.0.0)"; resolution:="optional"
+                Unresolved requirement: Import-Package: javax.faces.context; version="[1.1.0,3.0.0)"; resolution:="optional"
+                Unresolved requirement: Import-Package: javax.faces.event; version="[1.1.0,3.0.0)"; resolution:="optional"
+                Unresolved requirement: Import-Package: javax.portlet; version="[2.0.0,3.0.0)"; resolution:="optional"
+                Unresolved requirement: Import-Package: javax.servlet; version="[2.4.0,4.0.0)"
+         Unresolved requirement: Import-Package: org.springframework.http.client; version="[4.0.0,4.4.0)"
+           -> Export-Package: org.springframework.http.client; bundle-symbolic-name="org.springframework.web"; bundle-version="4.3.23.20190313-CI"; version="4.3.23.20190313-CI"; uses:="com.squareup.okhttp,io.netty.bootstrap,io.netty.channel,io.netty.channel.socket,io.netty.handler.codec.http,io.netty.handler.ssl,io.netty.util.concurrent,okhttp3,org.apache.http,org.apache.http.client,org.apache.http.client.config,org.apache.http.client.methods,org.apache.http.concurrent,org.apache.http.impl.client,org.apache.http.impl.nio.client,org.apache.http.nio.client,org.apache.http.protocol,org.springframework.beans.factory,org.springframework.core.task,org.springframework.http,org.springframework.util.concurrent"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:463)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.lambda$1(ModuleContainer.java:1834)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1829)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1775)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1739)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1661)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:228)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:339)
+
+!ENTRY org.springframework.ide.eclipse.metadata 4 0 2022-04-25 08:31:00.728
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.springframework.ide.eclipse.metadata [1033]
+  Unresolved requirement: Import-Package: org.springframework.web.bind.annotation; version="[4.0.0,4.4.0)"
+    -> Export-Package: org.springframework.web.bind.annotation; bundle-symbolic-name="org.springframework.web"; bundle-version="4.3.23.20190313-CI"; version="4.3.23.20190313-CI"; uses:="org.springframework.core.annotation,org.springframework.http,org.springframework.stereotype"
+       org.springframework.web [1049]
+         Unresolved requirement: Import-Package: com.caucho.burlap.client; version="[3.2.1,5.0.0)"; resolution:="optional"
+         Unresolved requirement: Import-Package: com.caucho.burlap.io; version="[3.2.1,5.0.0)"; resolution:="optional"
+         Unresolved requirement: Import-Package: com.caucho.burlap.server; version="[3.2.1,5.0.0)"; resolution:="optional"
+         Unresolved requirement: Import-Package: com.caucho.hessian; version="[3.2.1,5.0.0)"; resolution:="optional"
+         Unresolved requirement: Import-Package: com.caucho.hessian.client; version="[3.2.1,5.0.0)"; resolution:="optional"
+         Unresolved requirement: Import-Package: com.caucho.hessian.io; version="[3.2.1,5.0.0)"; resolution:="optional"
+         Unresolved requirement: Import-Package: com.caucho.hessian.server; version="[3.2.1,5.0.0)"; resolution:="optional"
+         Unresolved requirement: Import-Package: com.fasterxml.jackson.dataformat.xml; version="[2.0.0,3.0.0)"; resolution:="optional"
+         Unresolved requirement: Import-Package: com.googlecode.protobuf.format; resolution:="optional"
+         Unresolved requirement: Import-Package: com.rometools.rome.feed; resolution:="optional"
+         Unresolved requirement: Import-Package: com.rometools.rome.feed.atom; resolution:="optional"
+         Unresolved requirement: Import-Package: com.rometools.rome.feed.rss; resolution:="optional"
+         Unresolved requirement: Import-Package: com.rometools.rome.io; resolution:="optional"
+         Unresolved requirement: Import-Package: com.squareup.okhttp; resolution:="optional"
+         Unresolved requirement: Import-Package: com.squareup.okhttp.internal.http; resolution:="optional"
+         Unresolved requirement: Import-Package: groovy.lang; resolution:="optional"
+         Unresolved requirement: Import-Package: io.netty.bootstrap; resolution:="optional"
+         Unresolved requirement: Import-Package: io.netty.buffer; resolution:="optional"
+         Unresolved requirement: Import-Package: io.netty.channel; resolution:="optional"
+         Unresolved requirement: Import-Package: io.netty.channel.nio; resolution:="optional"
+         Unresolved requirement: Import-Package: io.netty.channel.socket; resolution:="optional"
+         Unresolved requirement: Import-Package: io.netty.channel.socket.nio; resolution:="optional"
+         Unresolved requirement: Import-Package: io.netty.handler.codec.http; resolution:="optional"
+         Unresolved requirement: Import-Package: io.netty.handler.ssl; resolution:="optional"
+         Unresolved requirement: Import-Package: io.netty.handler.timeout; resolution:="optional"
+         Unresolved requirement: Import-Package: io.netty.util.concurrent; resolution:="optional"
+         Unresolved requirement: Import-Package: javax.faces.application; version="[1.1.0,3.0.0)"; resolution:="optional"
+         Unresolved requirement: Import-Package: javax.faces.component; version="[1.1.0,3.0.0)"; resolution:="optional"
+         Unresolved requirement: Import-Package: javax.faces.context; version="[1.1.0,3.0.0)"; resolution:="optional"
+         Unresolved requirement: Import-Package: javax.faces.event; version="[1.1.0,3.0.0)"; resolution:="optional"
+         Unresolved requirement: Import-Package: javax.portlet; version="[2.0.0,3.0.0)"; resolution:="optional"
+         Unresolved requirement: Import-Package: javax.servlet; version="[2.4.0,4.0.0)"
+  Unresolved requirement: Import-Package: org.springframework.web.context; version="[4.0.0,4.4.0)"
+    -> Export-Package: org.springframework.web.context; bundle-symbolic-name="org.springframework.web"; bundle-version="4.3.23.20190313-CI"; version="4.3.23.20190313-CI"; uses:="javax.servlet,org.springframework.beans.factory,org.springframework.context,org.springframework.core.env,org.springframework.web"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:463)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.lambda$1(ModuleContainer.java:1834)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1829)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1775)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1739)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1661)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:228)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:339)
+
+!ENTRY org.springframework.ide.eclipse.quickfix 4 0 2022-04-25 08:31:00.728
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.springframework.ide.eclipse.quickfix [1035]
+  Unresolved requirement: Require-Bundle: org.springframework.web
+    -> Bundle-SymbolicName: org.springframework.web; bundle-version="4.3.23.20190313-CI"
+       org.springframework.web [1049]
+         Unresolved requirement: Import-Package: com.caucho.burlap.client; version="[3.2.1,5.0.0)"; resolution:="optional"
+         Unresolved requirement: Import-Package: com.caucho.burlap.io; version="[3.2.1,5.0.0)"; resolution:="optional"
+         Unresolved requirement: Import-Package: com.caucho.burlap.server; version="[3.2.1,5.0.0)"; resolution:="optional"
+         Unresolved requirement: Import-Package: com.caucho.hessian; version="[3.2.1,5.0.0)"; resolution:="optional"
+         Unresolved requirement: Import-Package: com.caucho.hessian.client; version="[3.2.1,5.0.0)"; resolution:="optional"
+         Unresolved requirement: Import-Package: com.caucho.hessian.io; version="[3.2.1,5.0.0)"; resolution:="optional"
+         Unresolved requirement: Import-Package: com.caucho.hessian.server; version="[3.2.1,5.0.0)"; resolution:="optional"
+         Unresolved requirement: Import-Package: com.fasterxml.jackson.dataformat.xml; version="[2.0.0,3.0.0)"; resolution:="optional"
+         Unresolved requirement: Import-Package: com.googlecode.protobuf.format; resolution:="optional"
+         Unresolved requirement: Import-Package: com.rometools.rome.feed; resolution:="optional"
+         Unresolved requirement: Import-Package: com.rometools.rome.feed.atom; resolution:="optional"
+         Unresolved requirement: Import-Package: com.rometools.rome.feed.rss; resolution:="optional"
+         Unresolved requirement: Import-Package: com.rometools.rome.io; resolution:="optional"
+         Unresolved requirement: Import-Package: com.squareup.okhttp; resolution:="optional"
+         Unresolved requirement: Import-Package: com.squareup.okhttp.internal.http; resolution:="optional"
+         Unresolved requirement: Import-Package: groovy.lang; resolution:="optional"
+         Unresolved requirement: Import-Package: io.netty.bootstrap; resolution:="optional"
+         Unresolved requirement: Import-Package: io.netty.buffer; resolution:="optional"
+         Unresolved requirement: Import-Package: io.netty.channel; resolution:="optional"
+         Unresolved requirement: Import-Package: io.netty.channel.nio; resolution:="optional"
+         Unresolved requirement: Import-Package: io.netty.channel.socket; resolution:="optional"
+         Unresolved requirement: Import-Package: io.netty.channel.socket.nio; resolution:="optional"
+         Unresolved requirement: Import-Package: io.netty.handler.codec.http; resolution:="optional"
+         Unresolved requirement: Import-Package: io.netty.handler.ssl; resolution:="optional"
+         Unresolved requirement: Import-Package: io.netty.handler.timeout; resolution:="optional"
+         Unresolved requirement: Import-Package: io.netty.util.concurrent; resolution:="optional"
+         Unresolved requirement: Import-Package: javax.faces.application; version="[1.1.0,3.0.0)"; resolution:="optional"
+         Unresolved requirement: Import-Package: javax.faces.component; version="[1.1.0,3.0.0)"; resolution:="optional"
+         Unresolved requirement: Import-Package: javax.faces.context; version="[1.1.0,3.0.0)"; resolution:="optional"
+         Unresolved requirement: Import-Package: javax.faces.event; version="[1.1.0,3.0.0)"; resolution:="optional"
+         Unresolved requirement: Import-Package: javax.portlet; version="[2.0.0,3.0.0)"; resolution:="optional"
+         Unresolved requirement: Import-Package: javax.servlet; version="[2.4.0,4.0.0)"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:463)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.lambda$1(ModuleContainer.java:1834)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1829)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1775)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1739)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1661)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:228)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:339)
+
+!ENTRY org.springframework.ide.eclipse.wizard 4 0 2022-04-25 08:31:00.735
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.springframework.ide.eclipse.wizard [1038]
+  Unresolved requirement: Import-Package: org.springframework.http; version="[4.0.0,4.4.0)"
+    -> Export-Package: org.springframework.http; bundle-symbolic-name="org.springframework.web"; bundle-version="4.3.23.20190313-CI"; version="4.3.23.20190313-CI"; uses:="org.springframework.core.io,org.springframework.core.io.support,org.springframework.util"
+       org.springframework.web [1049]
+         Unresolved requirement: Import-Package: com.caucho.burlap.client; version="[3.2.1,5.0.0)"; resolution:="optional"
+         Unresolved requirement: Import-Package: com.caucho.burlap.io; version="[3.2.1,5.0.0)"; resolution:="optional"
+         Unresolved requirement: Import-Package: com.caucho.burlap.server; version="[3.2.1,5.0.0)"; resolution:="optional"
+         Unresolved requirement: Import-Package: com.caucho.hessian; version="[3.2.1,5.0.0)"; resolution:="optional"
+         Unresolved requirement: Import-Package: com.caucho.hessian.client; version="[3.2.1,5.0.0)"; resolution:="optional"
+         Unresolved requirement: Import-Package: com.caucho.hessian.io; version="[3.2.1,5.0.0)"; resolution:="optional"
+         Unresolved requirement: Import-Package: com.caucho.hessian.server; version="[3.2.1,5.0.0)"; resolution:="optional"
+         Unresolved requirement: Import-Package: com.fasterxml.jackson.dataformat.xml; version="[2.0.0,3.0.0)"; resolution:="optional"
+         Unresolved requirement: Import-Package: com.googlecode.protobuf.format; resolution:="optional"
+         Unresolved requirement: Import-Package: com.rometools.rome.feed; resolution:="optional"
+         Unresolved requirement: Import-Package: com.rometools.rome.feed.atom; resolution:="optional"
+         Unresolved requirement: Import-Package: com.rometools.rome.feed.rss; resolution:="optional"
+         Unresolved requirement: Import-Package: com.rometools.rome.io; resolution:="optional"
+         Unresolved requirement: Import-Package: com.squareup.okhttp; resolution:="optional"
+         Unresolved requirement: Import-Package: com.squareup.okhttp.internal.http; resolution:="optional"
+         Unresolved requirement: Import-Package: groovy.lang; resolution:="optional"
+         Unresolved requirement: Import-Package: io.netty.bootstrap; resolution:="optional"
+         Unresolved requirement: Import-Package: io.netty.buffer; resolution:="optional"
+         Unresolved requirement: Import-Package: io.netty.channel; resolution:="optional"
+         Unresolved requirement: Import-Package: io.netty.channel.nio; resolution:="optional"
+         Unresolved requirement: Import-Package: io.netty.channel.socket; resolution:="optional"
+         Unresolved requirement: Import-Package: io.netty.channel.socket.nio; resolution:="optional"
+         Unresolved requirement: Import-Package: io.netty.handler.codec.http; resolution:="optional"
+         Unresolved requirement: Import-Package: io.netty.handler.ssl; resolution:="optional"
+         Unresolved requirement: Import-Package: io.netty.handler.timeout; resolution:="optional"
+         Unresolved requirement: Import-Package: io.netty.util.concurrent; resolution:="optional"
+         Unresolved requirement: Import-Package: javax.faces.application; version="[1.1.0,3.0.0)"; resolution:="optional"
+         Unresolved requirement: Import-Package: javax.faces.component; version="[1.1.0,3.0.0)"; resolution:="optional"
+         Unresolved requirement: Import-Package: javax.faces.context; version="[1.1.0,3.0.0)"; resolution:="optional"
+         Unresolved requirement: Import-Package: javax.faces.event; version="[1.1.0,3.0.0)"; resolution:="optional"
+         Unresolved requirement: Import-Package: javax.portlet; version="[2.0.0,3.0.0)"; resolution:="optional"
+         Unresolved requirement: Import-Package: javax.servlet; version="[2.4.0,4.0.0)"
+  Unresolved requirement: Import-Package: org.springframework.http.client; version="[4.0.0,4.4.0)"
+    -> Export-Package: org.springframework.http.client; bundle-symbolic-name="org.springframework.web"; bundle-version="4.3.23.20190313-CI"; version="4.3.23.20190313-CI"; uses:="com.squareup.okhttp,io.netty.bootstrap,io.netty.channel,io.netty.channel.socket,io.netty.handler.codec.http,io.netty.handler.ssl,io.netty.util.concurrent,okhttp3,org.apache.http,org.apache.http.client,org.apache.http.client.config,org.apache.http.client.methods,org.apache.http.concurrent,org.apache.http.impl.client,org.apache.http.impl.nio.client,org.apache.http.nio.client,org.apache.http.protocol,org.springframework.beans.factory,org.springframework.core.task,org.springframework.http,org.springframework.util.concurrent"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:463)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.lambda$1(ModuleContainer.java:1834)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1829)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1775)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1739)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1661)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:228)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:339)
+
+!ENTRY org.springsource.ide.eclipse.commons.gettingstarted 4 0 2022-04-25 08:31:00.735
+!MESSAGE FrameworkEvent ERROR
+!STACK 0
+org.osgi.framework.BundleException: Could not resolve module: org.springsource.ide.eclipse.commons.gettingstarted [1058]
+  Unresolved requirement: Require-Bundle: org.springframework.web
+    -> Bundle-SymbolicName: org.springframework.web; bundle-version="4.3.23.20190313-CI"
+       org.springframework.web [1049]
+         Unresolved requirement: Import-Package: com.caucho.burlap.client; version="[3.2.1,5.0.0)"; resolution:="optional"
+         Unresolved requirement: Import-Package: com.caucho.burlap.io; version="[3.2.1,5.0.0)"; resolution:="optional"
+         Unresolved requirement: Import-Package: com.caucho.burlap.server; version="[3.2.1,5.0.0)"; resolution:="optional"
+         Unresolved requirement: Import-Package: com.caucho.hessian; version="[3.2.1,5.0.0)"; resolution:="optional"
+         Unresolved requirement: Import-Package: com.caucho.hessian.client; version="[3.2.1,5.0.0)"; resolution:="optional"
+         Unresolved requirement: Import-Package: com.caucho.hessian.io; version="[3.2.1,5.0.0)"; resolution:="optional"
+         Unresolved requirement: Import-Package: com.caucho.hessian.server; version="[3.2.1,5.0.0)"; resolution:="optional"
+         Unresolved requirement: Import-Package: com.fasterxml.jackson.dataformat.xml; version="[2.0.0,3.0.0)"; resolution:="optional"
+         Unresolved requirement: Import-Package: com.googlecode.protobuf.format; resolution:="optional"
+         Unresolved requirement: Import-Package: com.rometools.rome.feed; resolution:="optional"
+         Unresolved requirement: Import-Package: com.rometools.rome.feed.atom; resolution:="optional"
+         Unresolved requirement: Import-Package: com.rometools.rome.feed.rss; resolution:="optional"
+         Unresolved requirement: Import-Package: com.rometools.rome.io; resolution:="optional"
+         Unresolved requirement: Import-Package: com.squareup.okhttp; resolution:="optional"
+         Unresolved requirement: Import-Package: com.squareup.okhttp.internal.http; resolution:="optional"
+         Unresolved requirement: Import-Package: groovy.lang; resolution:="optional"
+         Unresolved requirement: Import-Package: io.netty.bootstrap; resolution:="optional"
+         Unresolved requirement: Import-Package: io.netty.buffer; resolution:="optional"
+         Unresolved requirement: Import-Package: io.netty.channel; resolution:="optional"
+         Unresolved requirement: Import-Package: io.netty.channel.nio; resolution:="optional"
+         Unresolved requirement: Import-Package: io.netty.channel.socket; resolution:="optional"
+         Unresolved requirement: Import-Package: io.netty.channel.socket.nio; resolution:="optional"
+         Unresolved requirement: Import-Package: io.netty.handler.codec.http; resolution:="optional"
+         Unresolved requirement: Import-Package: io.netty.handler.ssl; resolution:="optional"
+         Unresolved requirement: Import-Package: io.netty.handler.timeout; resolution:="optional"
+         Unresolved requirement: Import-Package: io.netty.util.concurrent; resolution:="optional"
+         Unresolved requirement: Import-Package: javax.faces.application; version="[1.1.0,3.0.0)"; resolution:="optional"
+         Unresolved requirement: Import-Package: javax.faces.component; version="[1.1.0,3.0.0)"; resolution:="optional"
+         Unresolved requirement: Import-Package: javax.faces.context; version="[1.1.0,3.0.0)"; resolution:="optional"
+         Unresolved requirement: Import-Package: javax.faces.event; version="[1.1.0,3.0.0)"; resolution:="optional"
+         Unresolved requirement: Import-Package: javax.portlet; version="[2.0.0,3.0.0)"; resolution:="optional"
+         Unresolved requirement: Import-Package: javax.servlet; version="[2.4.0,4.0.0)"
+
+	at org.eclipse.osgi.container.Module.start(Module.java:463)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.lambda$1(ModuleContainer.java:1834)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1829)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.incStartLevel(ModuleContainer.java:1775)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.doContainerStartLevel(ModuleContainer.java:1739)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1661)
+	at org.eclipse.osgi.container.ModuleContainer$ContainerStartLevel.dispatchEvent(ModuleContainer.java:1)
+	at org.eclipse.osgi.framework.eventmgr.EventManager.dispatchEvent(EventManager.java:228)
+	at org.eclipse.osgi.framework.eventmgr.EventManager$EventThread.run(EventManager.java:339)
+
+!ENTRY org.eclipse.jface 2 0 2022-04-25 08:31:09.051
+!MESSAGE Keybinding conflicts occurred.  They may interfere with normal accelerator operation.
+!SUBENTRY 1 org.eclipse.jface 2 0 2022-04-25 08:31:09.051
+!MESSAGE A conflict occurred for CTRL+SHIFT+T:
+Binding(CTRL+SHIFT+T,
+	ParameterizedCommand(Command(org.eclipse.jdt.ui.navigate.open.type,Open Type,
+		Open a type in a Java editor,
+		Category(org.eclipse.ui.category.navigate,Navigate,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@72cf159f,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+Binding(CTRL+SHIFT+T,
+	ParameterizedCommand(Command(org.eclipse.lsp4e.symbolinworkspace,Go to Symbol in Workspace,
+		,
+		Category(org.eclipse.lsp4e.category,Language Servers,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@54af9cce,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+!SUBENTRY 1 org.eclipse.jface 2 0 2022-04-25 08:31:09.051
+!MESSAGE A conflict occurred for ALT+SHIFT+R:
+Binding(ALT+SHIFT+R,
+	ParameterizedCommand(Command(org.eclipse.jdt.ui.edit.text.java.rename.element,Rename - Refactoring ,
+		Rename the selected element,
+		Category(org.eclipse.jdt.ui.category.refactoring,Refactor - Java,Java Refactoring Actions,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@683218c8,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+Binding(ALT+SHIFT+R,
+	ParameterizedCommand(Command(org.eclipse.ui.edit.rename,Rename,
+		Rename the selected item,
+		Category(org.eclipse.ui.category.file,File,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@3eb6d7a9,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+
+!ENTRY org.eclipse.ui.navigator 2 0 2022-04-25 08:31:14.361
+!MESSAGE Can't find Navigator Content Descriptor with id: org.eclipse.jst.servlet.ui.EnhancedJavaRendering
+
+!ENTRY org.eclipse.ui.navigator 2 0 2022-04-25 08:31:14.362
+!MESSAGE Can't find Navigator Content Descriptor with id: org.eclipse.jst.servlet.ui.EnhancedJavaRendering
+
+!ENTRY org.eclipse.egit.ui 2 0 2022-04-25 08:31:16.367
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\concepcion.marquez'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2022-04-25 08:31:18.837
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2022-04-25 08:31:18.856
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2022-04-25 08:31:19.999
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2022-04-25 08:31:19.999
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2022-04-25 08:31:20.029
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2022-04-25 08:31:20.045
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2022-04-25 08:31:20.140
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2022-04-25 08:31:20.140
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2022-04-25 08:31:20.225
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2022-04-25 08:31:20.225
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2022-04-25 08:31:20.317
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2022-04-25 08:31:20.317
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2022-04-25 08:31:20.410
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2022-04-25 08:31:20.410
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2022-04-25 08:31:20.797
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2022-04-25 08:31:20.797
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2022-04-25 08:31:20.940
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2022-04-25 08:31:20.940
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2022-04-25 09:16:01.509
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2022-04-25 09:16:01.513
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2022-04-25 09:18:44.346
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2022-04-25 09:18:44.347
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2022-04-25 09:19:08.216
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2022-04-25 09:19:08.218
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2022-04-25 09:20:54.173
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2022-04-25 09:20:54.175
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2022-04-25 09:21:56.111
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2022-04-25 09:21:56.114
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2022-04-25 09:22:04.773
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2022-04-25 09:22:04.775
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2022-04-25 09:22:20.900
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2022-04-25 09:22:20.903
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2022-04-25 09:25:10.874
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2022-04-25 09:25:10.876
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2022-04-25 09:25:25.991
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2022-04-25 09:25:25.993
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2022-04-25 09:26:26.406
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2022-04-25 09:26:26.408
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2022-04-25 09:32:23.296
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+
+!ENTRY org.eclipse.m2e.logback.appender 2 0 2022-04-25 09:32:23.298
+!MESSAGE Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
