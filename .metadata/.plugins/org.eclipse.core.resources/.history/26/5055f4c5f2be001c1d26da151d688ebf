@@ -1,6 +1,0 @@
-package service;
-
-@Service
-public interface BuscadorService {
-
-}

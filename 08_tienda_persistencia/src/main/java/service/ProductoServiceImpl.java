@@ -82,4 +82,12 @@ public class ProductoServiceImpl implements ProductoService {
 		return productos.size()>0?productos.get(0):null;
 	}
 
+	@Override
+	public double PrecioMedioSeccion(String seccion) {
+		String jpql ="select avg(p.precio) from Producto p where p.seccion = :seccion";
+		TypedQuery<Double> query=entityManager.createQuery(jpql, Double.class);
+		query.setParameter("seccion", seccion);
+		return query.getSingleResult(); //me devuelve un unico valor
+	}
+
 }

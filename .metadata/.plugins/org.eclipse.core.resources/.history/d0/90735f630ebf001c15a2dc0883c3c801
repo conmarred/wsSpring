@@ -1,8 +1,0 @@
-package model;
-
-public class Producto {
-	private String nombre;
-	private Integer precio, stock;
-	
-
-}

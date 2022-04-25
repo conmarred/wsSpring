@@ -17,5 +17,7 @@ public interface ProductoService {
 	Producto buscarProductoId(int id);
 	
 	Producto buscarProducto(String nombre);
+	
+	double PrecioMedioSeccion(String seccion);
 
 }
