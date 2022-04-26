@@ -12,12 +12,11 @@ import org.springframework.orm.jpa.JpaTransactionManager;
 import org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean;
 import org.springframework.orm.jpa.vendor.HibernateJpaVendorAdapter;
 import org.springframework.transaction.annotation.EnableTransactionManagement;
-import org.springframework.web.servlet.config.annotation.EnableWebMvc;
 
 @EnableTransactionManagement //habilitar la transaccionalidad mediante anotaciones
 @PropertySource(value = "classpath:config/application.properties")
 @Configuration
-@ComponentScan(basePackages = {"service"})
+@ComponentScan(basePackages = {"service, dao"})
 public class ServiceConfig {
 	@Value("${driver}")
 	String driver;

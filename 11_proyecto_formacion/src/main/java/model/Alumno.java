@@ -4,6 +4,8 @@ import java.util.List;
 
 import javax.persistence.Entity;
 import javax.persistence.Id;
+import javax.persistence.JoinColumn;
+import javax.persistence.JoinTable;
 import javax.persistence.ManyToMany;
 import javax.persistence.Table;
 
@@ -26,6 +28,21 @@ public class Alumno {
 	private Integer edad;
 	private String email;
 	
-	@ManyToMany(mappedBy="alumnos")
+	@ManyToMany()
+	@JoinTable(name="matriculas",
+		joinColumns = @JoinColumn(name="usuario",referencedColumnName = "usuario"), 
+        inverseJoinColumns = @JoinColumn(name="idCurso", referencedColumnName ="idCurso"))
 	private List<Curso> cursos;
+
+	public Alumno(String usuario, String password, String nombre, Integer edad, String email) {
+		super();
+		this.usuario = usuario;
+		this.password = password;
+		this.nombre = nombre;
+		this.edad = edad;
+		this.email = email;
+	}
+
+	
+	
 }

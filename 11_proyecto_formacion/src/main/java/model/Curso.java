@@ -6,14 +6,13 @@ import java.util.List;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
-import javax.persistence.JoinColumn;
-import javax.persistence.JoinTable;
+import javax.persistence.Id;
 import javax.persistence.ManyToMany;
 import javax.persistence.Table;
 import javax.persistence.Temporal;
 import javax.persistence.TemporalType;
 
-import org.springframework.data.annotation.Id;
+
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
@@ -35,11 +34,17 @@ public class Curso {
 	//Recomendable utilizar temporal para saber como tratar la fecha
 	@Temporal(TemporalType.DATE)
 	private Date fechaInicio;
+	@ManyToMany(mappedBy = "cursos")
+	private List<Alumno> alumnos;
 
-	@ManyToMany()
-	@JoinTable(name="matriculas",
-		joinColumns = @JoinColumn(name="usuario",referencedColumnName = "usuario"), 
-        inverseJoinColumns = @JoinColumn(name="idCurso", referencedColumnName ="idCurso"))
-	private List<Curso> cursos;
+	public Curso(Integer idCurso, String nombre, Integer duracion, Double precio, Date fechaInicio) {
+		super();
+		this.idCurso = idCurso;
+		this.nombre = nombre;
+		this.duracion = duracion;
+		this.precio = precio;
+		this.fechaInicio = fechaInicio;
+	}
+	
 	
 }
