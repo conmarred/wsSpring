@@ -1,0 +1,51 @@
+package testing;
+
+import static org.junit.jupiter.api.Assertions.assertEquals;
+import org.junit.jupiter.api.Test;
+import org.junit.jupiter.api.extension.ExtendWith;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.test.context.ContextConfiguration;
+import org.springframework.test.context.junit.jupiter.SpringExtension;
+
+import config.ServiceConfig;
+import service.FormacionService;
+
+@ExtendWith(SpringExtension.class)
+//le decimos a spring que durante el arranque utilice solo esta clase de configuracion
+@ContextConfiguration(classes = {ServiceConfig.class})
+public class TestFormacionService {
+	
+	@Autowired
+	FormacionService service;	
+	
+	@Test
+	void testValidarUsuario() {
+		assertEquals("nuevo", service.validarUsuario("nuevo10", "nuevo10").getNombre());
+		assertEquals(null, service.validarUsuario("nuevo10", "nuevo1"));
+
+	}
+	
+	@Test
+	void testCursosAlumnos() {
+		assertEquals(3, service.cursosAlumno("aaa").size());
+	}
+	
+	@Test
+	void testListarCursos() {
+		assertEquals(18, service.listarCursos().size());
+	}
+	
+	@Test
+	void testAlumnosCurso() {
+		assertEquals(5, service.alumnosCurso("python").size());
+	}
+	
+//	@Test
+	//Este test lo realizo en la clase TestMatriculacion
+	void testMatricularAlumno() {
+		//Alumno alumno1 = new Alumno("conce", "marquez", "concemarquez", 23, "conce@email.es");
+		service.matricularAlumno("aaa", 2);
+		assertEquals(5, service.alumnosCurso("python").size());
+	}
+
+}
