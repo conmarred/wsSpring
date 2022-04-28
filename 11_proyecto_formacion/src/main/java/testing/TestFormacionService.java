@@ -31,7 +31,7 @@ public class TestFormacionService {
 	@Test
 	void testCursosAlumnos() {
 		Alumno aux = new Alumno("aaa", "sseeeee", "ordenador", 45, "ss@dd.es");
-		assertEquals(3, service.cursosAlumno(aux).size());
+		assertEquals(3, service.cursosAlumno("aaa").size());
 	}
 	
 	@Test

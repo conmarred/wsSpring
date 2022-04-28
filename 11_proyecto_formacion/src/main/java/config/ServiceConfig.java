@@ -57,6 +57,9 @@ public class ServiceConfig {
 		factory.setPersistenceUnitName("tiendaPU"); //nombre que le damos a la unidad de persistencia
 		factory.setDataSource(dataSource);
 		factory.setPackagesToScan("model");
+//		Properties props=new Properties();
+//		props.put("hibernate.enable_lazy_load_no_trans", true);
+//		factory.setJpaProperties(props);
 		factory.setJpaVendorAdapter(adapter);
 		return factory;
 	}

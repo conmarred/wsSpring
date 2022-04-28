@@ -27,7 +27,7 @@ public class MvcConfig implements WebMvcConfigurer{
 	//sobreescribimos el método addViewControllers para que al ejecutar por defecto me lleve a inicio
 	@Override
 	public void addViewControllers(ViewControllerRegistry registry) {
-		registry.addViewController("/").setViewName("inicio");
+		registry.addViewController("/").setViewName("login");
 	}
 
 	//registro de los recursos estaticos (imagenes, videos, hojas de estilo,...)

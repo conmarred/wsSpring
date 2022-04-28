@@ -3,6 +3,7 @@ package dao;
 import java.util.List;
 
 import javax.persistence.EntityManager;
+import javax.persistence.NoResultException;
 import javax.persistence.PersistenceContext;
 import javax.persistence.TypedQuery;
 
@@ -21,12 +22,17 @@ public class AlumnosDaoImpl implements AlumnosDao {
 		String jpql = "select a from Alumno a where a.usuario= :usuario";
 		TypedQuery<Alumno> query=entityManager.createQuery(jpql, Alumno.class);
 		query.setParameter("usuario", usuario);
-		Alumno aux = query.getSingleResult();
-		if(aux.getPassword().equals(password)) {
-			return aux;
-		}else {
+		try {
+			Alumno aux = query.getSingleResult();
+			if(aux.getPassword().equals(password)) {
+				return aux;
+			}else {
+				return null;
+			}
+		} catch (NoResultException ex) {
 			return null;
 		}
+		
 	}
 
 	@Override
@@ -47,6 +53,13 @@ public class AlumnosDaoImpl implements AlumnosDao {
 	@Override
 	public void update(Alumno alumno) {
 		entityManager.merge(alumno);
+	}
+
+	@Override
+	public List<Alumno> findAll() {
+		String jpql = "select a from Alumno a";
+		TypedQuery<Alumno> query=entityManager.createQuery(jpql, Alumno.class);
+		return query.getResultList();
 	}
 
 }

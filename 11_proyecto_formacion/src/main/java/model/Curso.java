@@ -12,6 +12,7 @@ import javax.persistence.Table;
 import javax.persistence.Temporal;
 import javax.persistence.TemporalType;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
 
 import lombok.AllArgsConstructor;
 import lombok.Getter;
@@ -34,6 +35,7 @@ public class Curso {
 	//Recomendable utilizar temporal para saber como tratar la fecha
 	@Temporal(TemporalType.DATE)
 	private Date fechaInicio;
+	@JsonIgnore
 	@ManyToMany(mappedBy = "cursos")
 	private List<Alumno> alumnos;
 

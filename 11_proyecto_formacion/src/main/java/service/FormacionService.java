@@ -19,9 +19,10 @@ public interface FormacionService {
 	 */
 	
 	Alumno validarUsuario(String usuario, String password);
-	List<Curso> cursosAlumno(Alumno alumno);
+	List<Curso> cursosAlumno(String usuario);
 	List<Curso> listarCursos();
 	List<Alumno> alumnosCurso(String nombreCurso);
-	void matricularAlumno(String usuario, Integer idCurso);
+	boolean matricularAlumno(String usuario, Integer idCurso);
+	List<Alumno> alumnos();
 	
 }

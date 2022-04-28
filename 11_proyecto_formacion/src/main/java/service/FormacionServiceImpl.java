@@ -4,6 +4,8 @@ import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
+import org.springframework.web.bind.annotation.PostMapping;
+
 import dao.AlumnosDao;
 import dao.CursosDao;
 import model.Alumno;
@@ -20,15 +22,15 @@ public class FormacionServiceImpl implements FormacionService{
 		this.alumnosDao=alumnosDao;
 		this.cursosDao=cursosDao;
 	}
-	
+	@PostMapping(value="Login")
 	@Override
 	public Alumno validarUsuario(String usuario, String password) {
 		return alumnosDao.findByUsuarioAndPassword(usuario, password);
 	}
 
 	@Override
-	public List<Curso> cursosAlumno(Alumno alumno) {
-		return cursosDao.findByAlumno(alumno.getUsuario());
+	public List<Curso> cursosAlumno(String usuario) {
+		return cursosDao.findByAlumno(usuario);
 	}
 
 	@Override
@@ -43,13 +45,20 @@ public class FormacionServiceImpl implements FormacionService{
 
 	//@Transactional esto en el dao que es donde modifico bbdd
 	@Override
-	public void matricularAlumno(String usuario, Integer idCurso) {
+	public boolean matricularAlumno(String usuario, Integer idCurso) {
 		Alumno alumno = alumnosDao.findById(usuario);
 		Curso curso = cursosDao.findById(idCurso);
 		if(alumno!=null && curso!=null) {
 			alumno.getCursos().add(curso);
 			alumnosDao.update(alumno);
+			return true;
+		}else {
+			return false;
 		}
+	}
+	@Override
+	public List<Alumno> alumnos() {
+		return alumnosDao.findAll();
 	}
 	
 	
