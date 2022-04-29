@@ -97,8 +97,10 @@ public class FormacionController {
 //	}
 	
 	//Mas sencillo de hacer con la notacion @DateTimeFormat para formatear la fecha 
+	//http://localhost:8080/13_proyecto_formacion_completo/CursosFechaBetween?first=2020-02-12&second=2020-08-23
 	@GetMapping(value="CursosFechaBetween", produces = MediaType.APPLICATION_JSON_VALUE)
-	public @ResponseBody List<Curso> cursosFechaBetween(@RequestParam("fist") @DateTimeFormat(pattern="yyyy-MM-dd") Date first, @RequestParam("second") @DateTimeFormat(pattern="yyyy-MM-dd") Date second){
+	public @ResponseBody List<Curso> cursosFechaBetween(@RequestParam("first") @DateTimeFormat(pattern="yyyy-MM-dd") Date first, 
+														@RequestParam("second") @DateTimeFormat(pattern="yyyy-MM-dd") Date second){
 		return service.findCursosFechaBetween(first, second);
 	}
 	

@@ -3,4 +3,5 @@
     <typeInfo handle="=03_tienda_spring/src\/main\/java=/optional=/true=/=/maven.pomderived=/true=/&lt;service{ProductoService.java[ProductoService" modifiers="513" timestamp="1650352067789"/>
     <typeInfo handle="=11_proyecto_formacion/src\/main\/java=/optional=/true=/=/maven.pomderived=/true=/&lt;dao{CursosDao.java[CursosDao" modifiers="513" timestamp="1650968172698"/>
     <typeInfo handle="=11_proyecto_formacion/src\/main\/java=/optional=/true=/=/maven.pomderived=/true=/&lt;dao{AlumnosDao.java[AlumnosDao" modifiers="513" timestamp="1651051629421"/>
+    <typeInfo handle="=14_proyecto_formacion_completo_dto/src\/main\/java=/optional=/true=/=/maven.pomderived=/true=/&lt;converters{ConversorEntityDto.java[ConversorEntityDto" modifiers="513" timestamp="1651218637084"/>
 </typeInfoHistroy>
