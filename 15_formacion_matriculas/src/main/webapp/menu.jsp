@@ -1,17 +1,12 @@
-<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
-    pageEncoding="ISO-8859-1"%>
-<!DOCTYPE html>
-<html>
-<head>
-<meta charset="ISO-8859-1">
-<title>Menu</title>
-</head>
+<!DOCTYPE html><html lang="en"><head>
+  <meta charset="utf-8">
+  <title>Formacion</title>
+  <base href=".">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
+<link rel="stylesheet" href="styles.ef46db3751d8e999.css"></head>
 <body>
-	<h1>Formacion</h1>
-	<a>Buscar alumnos curso</a> <br>
-	<a>Buscar cursos alumno</a>
-	<br>
-	<a href="login.jsp">Volver al login</a>
+  <app-root></app-root>
+<script src="runtime.5fc3daab7687a891.js" type="module"></script><script src="polyfills.642312494c288a92.js" type="module"></script><script src="main.e65164007ea43fb9.js" type="module"></script>
 
-</body>
-</html>
+</body></html>
