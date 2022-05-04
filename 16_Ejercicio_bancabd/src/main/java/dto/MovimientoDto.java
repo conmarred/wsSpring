@@ -2,6 +2,8 @@ package dto;
 
 import java.util.Date;
 
+import com.fasterxml.jackson.annotation.JsonFormat;
+
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
@@ -15,6 +17,7 @@ import model.Cuenta;
 public class MovimientoDto {
 	private int idMovimiento;
 	private CuentaDto idCuenta;
+	@JsonFormat(pattern = "yyyy-MM-dd HH:mm:ss")
 	private Date fecha;
 	private int cantidad;
 	private String operacion;

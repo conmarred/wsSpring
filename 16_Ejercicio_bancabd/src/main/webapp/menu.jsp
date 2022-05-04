@@ -8,10 +8,10 @@
 </head>
 <body>
 	<h1>Menú</h1>
-	<a>Ingreso</a> <br>
-	<a>Extraccion</a> <br>
-	<a>Transferencia</a> <br>
-	<a>Movimientos</a>
+	<a href="ingreso.jsp">Ingreso</a> <br>
+	<a href="extraccion.jsp">Extraccion</a> <br>
+	<a href="transferencia.jsp">Transferencia</a> <br>
+	<a href="movimiento.jsp">Movimientos</a>
 	<br>
 	<a href="login.jsp">Volver al login</a>
 
