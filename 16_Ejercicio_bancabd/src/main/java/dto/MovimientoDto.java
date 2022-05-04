@@ -14,7 +14,7 @@ import model.Cuenta;
 @Getter
 public class MovimientoDto {
 	private int idMovimiento;
-	private Cuenta idCuenta;
+	private CuentaDto idCuenta;
 	private Date fecha;
 	private int cantidad;
 	private String operacion;

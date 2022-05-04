@@ -17,6 +17,7 @@ import lombok.Setter;
 @EqualsAndHashCode
 @Embeddable
 public class TitularPK implements Serializable{
-	private int idCliente;
 	private int idCuenta;
+	private int idCliente;
+	
 }

@@ -1,8 +1,10 @@
 package model;
 
+import java.util.List;
+
 import javax.persistence.Entity;
 import javax.persistence.Id;
-
+import javax.persistence.OneToMany;
 import javax.persistence.Table;
 
 import lombok.AllArgsConstructor;
@@ -24,7 +26,7 @@ public class Cliente {
 	private int telefono;
 
 //	@OneToMany(mappedBy = "idCliente")
-//	private List<Titulares> titulares;
+//	private List<Titular> titulares;
 
 	
 	

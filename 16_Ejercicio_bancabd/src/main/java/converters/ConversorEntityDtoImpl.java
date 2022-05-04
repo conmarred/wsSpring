@@ -1,5 +1,8 @@
 package converters;
 
+import java.util.ArrayList;
+import java.util.List;
+
 import org.springframework.stereotype.Component;
 
 import dto.ClienteDto;
@@ -8,6 +11,7 @@ import dto.MovimientoDto;
 import model.Cliente;
 import model.Cuenta;
 import model.Movimiento;
+import model.Titular;
 
 @Component
 public class ConversorEntityDtoImpl implements ConversorEntityDto{
@@ -19,6 +23,7 @@ public class ConversorEntityDtoImpl implements ConversorEntityDto{
 
 	@Override
 	public Cliente dtoToCliente(ClienteDto dto) {
+		List<Titular> ls = new ArrayList<>();
 		return new Cliente(dto.getDni(), dto.getNombre(), dto.getDireccion(), dto.getTelefono());
 	}
 
@@ -34,7 +39,7 @@ public class ConversorEntityDtoImpl implements ConversorEntityDto{
 
 	@Override
 	public MovimientoDto movimientoToDto(Movimiento movimiento) {
-		return new MovimientoDto(movimiento.getIdMovimiento(), movimiento.getCuenta(), movimiento.getFecha(), movimiento.getCantidad(), movimiento.getOperacion());
+		return new MovimientoDto(movimiento.getIdMovimiento(), cuentaToDto(movimiento.getCuenta()), movimiento.getFecha(), movimiento.getCantidad(), movimiento.getOperacion());
 	}
 
 	@Override

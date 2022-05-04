@@ -27,9 +27,7 @@ public class Cuenta {
 	@OneToMany(mappedBy = "cuenta")
 	private List<Movimiento> movimientos;
 	
-//	@OneToMany(mappedBy = "idCuenta")
-//	private List<Titulares> titulares;
-
+	
 	public Cuenta(int numeroCuenta, int saldo, String tipoCuenta) {
 		super();
 		this.numeroCuenta = numeroCuenta;

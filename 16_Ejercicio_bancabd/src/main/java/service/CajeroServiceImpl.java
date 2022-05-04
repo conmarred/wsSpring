@@ -1,9 +1,12 @@
 package service;
 
+import java.util.Calendar;
 import java.util.Date;
 import java.util.List;
 import java.util.Optional;
 import java.util.stream.Collectors;
+
+import javax.transaction.Transactional;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -12,10 +15,10 @@ import converters.ConversorEntityDto;
 import dao.ClienteDao;
 import dao.CuentaDao;
 import dao.MovimientoDao;
-import dto.ClienteDto;
 import dto.CuentaDto;
 import dto.MovimientoDto;
 import model.Cuenta;
+import model.Movimiento;
 
 @Service
 public class CajeroServiceImpl implements CajeroService {
@@ -41,19 +44,23 @@ public class CajeroServiceImpl implements CajeroService {
 		}
 		return null;
 	}
-
+	@Transactional
 	@Override
-	public void ingreso(MovimientoDto movimiento) {
-		movimientoDao.save(conversor.dtoToMovimiento(movimiento));
-		Cuenta c = cuentasDao.findBynumeroCuenta(movimiento.getIdCuenta().getNumeroCuenta());
-		cuentasDao.save(c);
+	public void ingreso(CuentaDto cuenta, Integer cantidad) {
+		Integer saldo = cuenta.getSaldo();
+		cuenta.setSaldo(saldo + cantidad);
+		conversor.cuentaToDto(cuentasDao.save(conversor.dtoToCuenta(cuenta)));
+		Calendar fechaNow = Calendar.getInstance();
+		movimientoDao.save(new Movimiento(0, fechaNow.getTime(), cantidad, "ingreso de "+cuenta.getNumeroCuenta(), conversor.dtoToCuenta(cuenta)));
 	}
-
+	@Transactional
 	@Override
-	public void extraccion(MovimientoDto movimiento) {
-		movimientoDao.save(conversor.dtoToMovimiento(movimiento));
-		Cuenta c = cuentasDao.findBynumeroCuenta(movimiento.getIdCuenta().getNumeroCuenta());
-		cuentasDao.save(c);
+	public void extraccion(CuentaDto cuenta, Integer cantidad) {
+		Integer saldo = cuenta.getSaldo();
+		cuenta.setSaldo(saldo - cantidad);
+		conversor.cuentaToDto(cuentasDao.save(conversor.dtoToCuenta(cuenta)));
+		Calendar fechaNow = Calendar.getInstance();
+		movimientoDao.save(new Movimiento(0, fechaNow.getTime(), cantidad, "extraccion de "+cuenta.getNumeroCuenta(),conversor.dtoToCuenta(cuenta)));
 	}
 
 	@Override
@@ -62,14 +69,15 @@ public class CajeroServiceImpl implements CajeroService {
 				.stream().map(x -> conversor.movimientoToDto(x))
 				.collect(Collectors.toList());
 	}
-
+	@Transactional
 	@Override
-	public List<ClienteDto> listaClientes() {
-		return clientesDao.findAll()
-				.stream()
-				.map(x -> conversor.clienteToDto(x))
-				.collect(Collectors.toList());
+	public boolean transferencia(CuentaDto cuenta1, Integer cantidad, CuentaDto cuenta2) {
+		extraccion(cuenta1, cantidad);
+		ingreso(cuenta2, cantidad);
+		return true;
 	}
+
+	
 	
 
 

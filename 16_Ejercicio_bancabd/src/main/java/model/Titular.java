@@ -21,11 +21,11 @@ public class Titular {
 	@EmbeddedId
 	private TitularPK id;
 	
-	@ManyToOne()
-	@JoinColumn(name = "numeroCuenta", referencedColumnName = "numeroCuenta", insertable = false, updatable = false)
-	Cuenta cuenta;
-	
-	@ManyToOne()
-	@JoinColumn(name = "dni", referencedColumnName = "dni", insertable = false, updatable = false)
-	Cliente cliente;
+//	@ManyToOne()
+//	@JoinColumn(name = "idCuenta", referencedColumnName = "idCuenta", insertable = false, updatable = false)
+//	private Cuenta cuenta;
+//	
+//	@ManyToOne()
+//	@JoinColumn(name = "idCliente", referencedColumnName = "idCliente", insertable = false, updatable = false)
+//	private Cliente cliente;
 }
