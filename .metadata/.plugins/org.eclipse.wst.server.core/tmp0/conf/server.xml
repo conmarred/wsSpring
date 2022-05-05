@@ -152,7 +152,7 @@
              Note: The pattern used is equivalent to using pattern="common" -->
         <Valve className="org.apache.catalina.valves.AccessLogValve" directory="logs" pattern="%h %l %u %t &quot;%r&quot; %s %b" prefix="localhost_access_log" suffix=".txt"/>
 
-      <Context docBase="C:\Users\concepcion.marquez\Desktop\BabelCamp\wsEclipse\.metadata\.plugins\org.eclipse.wst.server.core\tmp0\wtpwebapps\ROOT" path="" reloadable="false"/><Context docBase="C:\Users\concepcion.marquez\Desktop\BabelCamp\wsEclipse\.metadata\.plugins\org.eclipse.wst.server.core\tmp0\wtpwebapps\15_formacion_matriculas" path="/15_formacion_matriculas" reloadable="true" source="org.eclipse.jst.jee.server:15_formacion_matriculas"/><Context docBase="C:\Users\concepcion.marquez\Desktop\BabelCamp\wsEclipse\.metadata\.plugins\org.eclipse.wst.server.core\tmp0\wtpwebapps\16_Ejercicio_bancabd" path="/16_Ejercicio_bancabd" reloadable="true" source="org.eclipse.jst.jee.server:16_Ejercicio_bancabd"/><Context docBase="C:\Users\concepcion.marquez\Desktop\BabelCamp\wsEclipse\.metadata\.plugins\org.eclipse.wst.server.core\tmp0\wtpwebapps\17_servicio_buscador" path="/17_servicio_buscador" reloadable="true" source="org.eclipse.jst.jee.server:17_servicio_buscador"/></Host>
+      <Context docBase="C:\Users\concepcion.marquez\Desktop\BabelCamp\wsEclipse\.metadata\.plugins\org.eclipse.wst.server.core\tmp0\wtpwebapps\ROOT" path="" reloadable="false"/><Context docBase="C:\Users\concepcion.marquez\Desktop\BabelCamp\wsEclipse\.metadata\.plugins\org.eclipse.wst.server.core\tmp0\wtpwebapps\18_servicio_crud_alumnos" path="/18_servicio_crud_alumnos" reloadable="true" source="org.eclipse.jst.jee.server:18_servicio_crud_alumnos"/></Host>
     </Engine>
   </Service>
 </Server>
