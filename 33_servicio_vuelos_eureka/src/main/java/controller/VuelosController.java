@@ -40,8 +40,9 @@ public class VuelosController {
 	}
 	
 	@PutMapping(value = "Vuelo/{idVuelo}/{plazas}", produces = MediaType.TEXT_PLAIN_VALUE)
-	public String modificarVuelo(@PathVariable("idvuelo") int idvuelo, @PathVariable("plazas") Integer plazas) {
+	public String modificarVuelo(@PathVariable("idVuelo") int idvuelo, @PathVariable("plazas") Integer plazas) {
 		return String.valueOf(vuelosService.actualizarPlazas(idvuelo, plazas));
 	}
+
 
 }

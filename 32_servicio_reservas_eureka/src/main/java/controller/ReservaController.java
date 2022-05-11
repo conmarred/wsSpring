@@ -33,8 +33,8 @@ public class ReservaController {
 	}
 	
 	//http://localhost:8500/servicioReserva/Reserva/3
-	@PostMapping(value = "Reserva", produces = MediaType.APPLICATION_JSON_VALUE)
-	public void reservar(@RequestBody Reserva reserva, @PathVariable("plazas") Integer plazas) {
+	@PostMapping(value="Reserva/{plazas}", consumes=MediaType.APPLICATION_JSON_VALUE)
+	public void altaReserva(@RequestBody Reserva reserva,@PathVariable("plazas") int plazas) {
 		reservasService.reservarPlazasDispo(reserva, plazas);
 	}
 

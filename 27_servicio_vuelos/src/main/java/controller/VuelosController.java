@@ -33,14 +33,9 @@ public class VuelosController {
 		return aux;
 	}
 	
-	//http://localhost:9000/servicioVuelo/Vuelo?idVuelo=1&plazas=20
-	@PutMapping(value = "Vuelo", produces = MediaType.TEXT_PLAIN_VALUE)
-	public String actualizarPlazas(@RequestParam("idVuelo") int idVuelo, @RequestParam("plazas") Integer plazas) {
-		return String.valueOf(vuelosService.actualizarPlazas(idVuelo, plazas));
-	}
 	
 	@PutMapping(value = "Vuelo/{idVuelo}/{plazas}", produces = MediaType.TEXT_PLAIN_VALUE)
-	public String modificarVuelo(@PathVariable("idvuelo") int idvuelo, @PathVariable("plazas") Integer plazas) {
+	public String modificarVuelo(@PathVariable("idVuelo") int idvuelo, @PathVariable("plazas") Integer plazas) {
 		return String.valueOf(vuelosService.actualizarPlazas(idvuelo, plazas));
 	}
 

@@ -37,7 +37,7 @@ public class VuelosServiceImpl implements VuelosService {
 			return false;
 		}else {
 			Vuelo vueloAux = vuelosDao.findById(idVuelo).get();
-			vueloAux.setPlazas(plazas);
+			vueloAux.setPlazas(vueloAux.getPlazas() - plazas);
 			vuelosDao.save(vueloAux);
 			return true;
 		}
