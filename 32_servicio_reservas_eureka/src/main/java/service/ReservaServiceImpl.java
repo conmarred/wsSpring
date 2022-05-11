@@ -13,7 +13,7 @@ import model.Reserva;
 public class ReservaServiceImpl implements ReservaService {
 	//para comunicarme con el esterior necesito un restTemplate
 	RestTemplate template;
-	String urlBase="http://servicio_vuelo/servicioVuelo/";
+	String urlBase="http://servicio-vuelo/";
 		
 		
 	ReservasDao reservasDao;

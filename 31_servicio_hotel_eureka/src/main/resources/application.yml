@@ -1,7 +1,5 @@
 server:
   port: 8000
-  servlet:
-    context-path: /servicioHotel
 spring:
   datasource:
     driver-class-name: com.mysql.cj.jdbc.Driver
@@ -14,9 +12,10 @@ spring:
         implicit-strategy: org.hibernate.boot.model.naming.ImplicitNamingStrategyLegacyJpaImpl
         physical-strategy: org.hibernate.boot.model.naming.PhysicalNamingStrategyStandardImpl
   application:
-    name: servicio_hotel
+    name: servicio-hotel
 eureka:
+  instance:
+    hostname: localhost
   client:
-    register-with-eureka: false
     service-url:
       defaultZone: http://localhost:8761/eureka

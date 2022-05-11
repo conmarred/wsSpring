@@ -1,0 +1,21 @@
+server:
+  port: 8000
+  servlet:
+    context-path: /crud
+spring:
+  application:
+    name: servicio-alumnos
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    password: ''
+    url: jdbc:mysql://178.23.40.15:3306/academia?serverTimezone=UTC
+    username: root
+  jpa:
+    hibernate:
+      naming:
+        implicit-strategy: org.hibernate.boot.model.naming.ImplicitNamingStrategyLegacyJpaImpl
+        physical-strategy: org.hibernate.boot.model.naming.PhysicalNamingStrategyStandardImpl
+eureka:
+  client:
+    service-url:
+      defaultZone: http://200.100.20.35:8761/eureka

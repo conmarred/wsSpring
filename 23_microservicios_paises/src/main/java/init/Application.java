@@ -5,7 +5,7 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.annotation.Bean;
 import org.springframework.web.client.RestTemplate;
 
-@SpringBootApplication(scanBasePackages = {"service", "controller"})
+@SpringBootApplication(scanBasePackages = {"service", "controller", "init"})
 public class Application {
 
 	public static void main(String[] args) {
