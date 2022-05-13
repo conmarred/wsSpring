@@ -1,18 +1,27 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <aop-reference-model>
 <aop-project name="21_microservicios_tienda"/>
-<aop-project name="33_servicio_vuelos_eureka"/>
-<aop-project name="31_servicio_hotel_eureka"/>
 <aop-project name="32_servicio_reservas_eureka"/>
-<aop-project name="03_tienda_spring"/>
 <aop-project name="27_servicio_vuelos"/>
+<aop-project name="35_microservicios_crud_alumnos_multiperfil"/>
 <aop-project name="20_microservicios_crud_alumnos"/>
+<aop-project name="34_gateway"/>
 <aop-project name="23_microservicios_paises"/>
-<aop-project name="19_microservicios_buscador"/>
-<aop-project name="24_microservicios_crud_alumnos_securizado"/>
+<aop-project name="42_servicio_reservas_eureka_config"/>
 <aop-project name="26_servicio_reservas"/>
-<aop-project name="28_servidor_eureka"/>
 <aop-project name="02_buscador_spring"/>
 <aop-project name="29_microservicios_crud_alumnos_en_eureka"/>
 <aop-project name="30_microservicios_estudiantes_cliente_de_alumnos_eureka"/>
+<aop-project name="33_servicio_vuelos_eureka"/>
+<aop-project name="31_servicio_hotel_eureka"/>
+<aop-project name="38_microservicios_estudiantes_cliente_de_alumnos_jwt"/>
+<aop-project name="41_servicio_vuelos_eureka_config"/>
+<aop-project name="37_microservicios_crud_alumnos_securizado_jwt"/>
+<aop-project name="03_tienda_spring"/>
+<aop-project name="39_servidor_configuracion"/>
+<aop-project name="40_servicio_hotel_eureka_config"/>
+<aop-project name="19_microservicios_buscador"/>
+<aop-project name="36_servicio_hotel_documentado"/>
+<aop-project name="24_microservicios_crud_alumnos_securizado"/>
+<aop-project name="28_servidor_eureka"/>
 </aop-reference-model>
