@@ -5,7 +5,8 @@ spring:
     config:
       server:
         git:
-          uri: https://github.com/conmarred/servicios_config
+         # uri: https://github.com/conmarred/servicios_config
+          uri: https://github.com/conmarred/servicios_config_pedidos
         default-label: main
        # native:
         #  search-locations:
