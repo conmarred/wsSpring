@@ -17,7 +17,6 @@ public class Application {
 		SpringApplication.run(Application.class, args);
 	}
 	
-	@LoadBalanced
 	@Bean
 	public RestTemplate template() {
 		return new RestTemplate();

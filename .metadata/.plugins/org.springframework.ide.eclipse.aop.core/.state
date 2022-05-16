@@ -23,5 +23,6 @@
 <aop-project name="19_microservicios_buscador"/>
 <aop-project name="36_servicio_hotel_documentado"/>
 <aop-project name="24_microservicios_crud_alumnos_securizado"/>
+<aop-project name="44_servicio_pedidos"/>
 <aop-project name="28_servidor_eureka"/>
 </aop-reference-model>
