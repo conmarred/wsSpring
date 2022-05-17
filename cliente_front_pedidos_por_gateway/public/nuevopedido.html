@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+
+<title>Nuevo pedido</title>
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+
+<!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+<!-- Latest compiled JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script> 
+
+<script type="text/javascript">
+	
+	function cargarProductos(){
+		var url="http://localhost:8000/Productos/";
+		
+		$.get(url,function(data,status){			
+			var res="";
+			//transforma texto JSON en objeto/array JSON			
+			for(var h of data){
+				res+="<option value='"+h.codigoProducto+"'>"+h.producto+"</option>";
+			}
+			
+			$("#hotel").html(res);
+		});
+	}
+	function pedir(){	
+		var url="http://localhost:9000/Pedido/"+$("#plazas").val();
+		
+		var datos=new Object();
+		datos.codigoProducto=$("#codigoProducto").val();
+		datos.hotel=$("#unidades").val();
+		datos.total=$("#total").val();
+		datos.fechaPedido=$("#fechaPedido").val();		
+		$.ajax({method:"POST",
+			    url: url,
+			    data: JSON.stringify(datos),
+			    contentType: "application/json"});
+		
+
+	}
+</script>
+
+
+</head>
+<body onload="cargarProductos()">
+	<div class="container">
+	
+	<h1>Pedido</h1>
+	<div class="row">
+		
+		<div class="col-sm-6" style="border:solid 1px">
+		<br/>
+		<div class="form-group">
+		<label>Producto</label>
+		<select  id="hotel"  class="form-control" style="width:80%">
+		</select>
+		</div>
+		
+		<div class="form-group">
+		<label>Unidades</label>
+		<input type="number" min="0" id="plazas" class="form-control" style="width:80%" onblur="cargarProductos();"/>
+		
+		</div>
+		<br/>
+		<br/>
+		</div>
+		
+	</div>
+		<br/>
+		
+		 <button onclick="pedir()">Confirmar pedido</button>
+		 <br/><br/><br/>
+		 <a href="pedidos.html">Ver pedidos</a>
+	
+	</div>
+	
+	
+	
+</body>
+</html>

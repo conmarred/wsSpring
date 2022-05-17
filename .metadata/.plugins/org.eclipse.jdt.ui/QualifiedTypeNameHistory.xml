@@ -1,20 +1,11 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <qualifiedTypeNameHistroy>
-    <fullyQualifiedTypeName name="service.StudentService"/>
-    <fullyQualifiedTypeName name="model.Student"/>
-    <fullyQualifiedTypeName name="org.springframework.web.bind.annotation.RequestBody"/>
-    <fullyQualifiedTypeName name="org.springframework.web.bind.annotation.PostMapping"/>
-    <fullyQualifiedTypeName name="org.springframework.http.MediaType"/>
-    <fullyQualifiedTypeName name="com.fasterxml.jackson.annotation.JsonProperty"/>
-    <fullyQualifiedTypeName name="service.PaisService"/>
-    <fullyQualifiedTypeName name="model.Pais"/>
     <fullyQualifiedTypeName name="com.fasterxml.jackson.annotation.JsonAlias"/>
     <fullyQualifiedTypeName name="org.springframework.context.annotation.Bean"/>
     <fullyQualifiedTypeName name="org.springframework.http.client.support.BasicAuthenticationInterceptor"/>
     <fullyQualifiedTypeName name="org.springframework.web.client.RestTemplate"/>
     <fullyQualifiedTypeName name="service.HotelesService"/>
     <fullyQualifiedTypeName name="dao.HotelesDao"/>
-    <fullyQualifiedTypeName name="org.springframework.web.bind.annotation.GetMapping"/>
     <fullyQualifiedTypeName name="javax.persistence.GenerationType"/>
     <fullyQualifiedTypeName name="org.springframework.data.jpa.repository.Query"/>
     <fullyQualifiedTypeName name="javax.persistence.GeneratedValue"/>
@@ -22,10 +13,7 @@
     <fullyQualifiedTypeName name="org.springframework.data.jpa.repository.JpaRepository"/>
     <fullyQualifiedTypeName name="org.springframework.web.bind.annotation.RestController"/>
     <fullyQualifiedTypeName name="service.VuelosService"/>
-    <fullyQualifiedTypeName name="org.springframework.stereotype.Service"/>
     <fullyQualifiedTypeName name="dao.VuelosDao"/>
-    <fullyQualifiedTypeName name="org.springframework.web.bind.annotation.PutMapping"/>
-    <fullyQualifiedTypeName name="java.util.List"/>
     <fullyQualifiedTypeName name="dao.ReservasDao"/>
     <fullyQualifiedTypeName name="model.Vuelo"/>
     <fullyQualifiedTypeName name="java.util.Arrays"/>
@@ -46,7 +34,6 @@
     <fullyQualifiedTypeName name="springfox.documentation.swagger2.annotations.EnableSwagger2"/>
     <fullyQualifiedTypeName name="io.swagger.annotations.ApiOperation"/>
     <fullyQualifiedTypeName name="io.swagger.annotations.ApiParam"/>
-    <fullyQualifiedTypeName name="org.springframework.beans.factory.annotation.Autowired"/>
     <fullyQualifiedTypeName name="filter.JwtFilter"/>
     <fullyQualifiedTypeName name="org.springframework.beans.factory.annotation.Value"/>
     <fullyQualifiedTypeName name="lombok.NoArgsConstructor"/>
@@ -60,4 +47,17 @@
     <fullyQualifiedTypeName name="org.springframework.cloud.config.server.EnableConfigServer"/>
     <fullyQualifiedTypeName name="java.util.Date"/>
     <fullyQualifiedTypeName name="javax.persistence.Id"/>
+    <fullyQualifiedTypeName name="dao.ProductosDao"/>
+    <fullyQualifiedTypeName name="service.ProductosService"/>
+    <fullyQualifiedTypeName name="org.springframework.web.bind.annotation.PutMapping"/>
+    <fullyQualifiedTypeName name="org.springframework.stereotype.Service"/>
+    <fullyQualifiedTypeName name="dao.PedidosDao"/>
+    <fullyQualifiedTypeName name="org.springframework.beans.factory.annotation.Autowired"/>
+    <fullyQualifiedTypeName name="controller.PedidoController"/>
+    <fullyQualifiedTypeName name="service.PedidosService"/>
+    <fullyQualifiedTypeName name="org.springframework.web.bind.annotation.PostMapping"/>
+    <fullyQualifiedTypeName name="org.springframework.web.bind.annotation.RequestBody"/>
+    <fullyQualifiedTypeName name="model.Pedido"/>
+    <fullyQualifiedTypeName name="org.springframework.web.bind.annotation.GetMapping"/>
+    <fullyQualifiedTypeName name="java.util.List"/>
 </qualifiedTypeNameHistroy>

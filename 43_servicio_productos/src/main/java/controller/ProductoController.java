@@ -25,13 +25,13 @@ public class ProductoController {
 		return productosService.listaProductos();
 	}
 	
-	@PutMapping(value = "Producto/{codigoProducto}/{unidades}", consumes = MediaType.APPLICATION_JSON_VALUE)
+	@PutMapping(value = "Producto/{codigoProducto}/{unidades}", produces = MediaType.APPLICATION_JSON_VALUE)
 	public boolean actualizaStock(@PathVariable("codigoProducto") Integer codigoProducto, @PathVariable("unidades") Integer unidades) {
 		boolean aux = productosService.actualizaStock(codigoProducto, unidades);
 		return aux;
 	}
 	
-	@GetMapping(value = "Producto/{codigoProducto}", consumes = MediaType.APPLICATION_JSON_VALUE)
+	@GetMapping(value = "Producto/{codigoProducto}", produces = MediaType.APPLICATION_JSON_VALUE)
 	public double precioUnitario(@PathVariable("codigoProducto") Integer codigoProducto) {
 		return productosService.precioUnitario(codigoProducto);
 	}
