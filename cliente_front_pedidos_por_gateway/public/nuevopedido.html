@@ -16,26 +16,25 @@
 <script type="text/javascript">
 	
 	function cargarProductos(){
-		var url="http://localhost:8000/Productos/";
+		var url="http://localhost:10000/sproductos/Productos/";
 		
 		$.get(url,function(data,status){			
 			var res="";
 			//transforma texto JSON en objeto/array JSON			
-			for(var h of data){
-				res+="<option value='"+h.codigoProducto+"'>"+h.producto+"</option>";
+			for(var p of data){
+				res+="<option value='"+p.codigoProducto+"'>"+p.producto+" - "+ p.precioUnitario+ " - "+ p.stock+"</option>";
 			}
 			
-			$("#hotel").html(res);
+			$("#producto").html(res);
 		});
 	}
 	function pedir(){	
-		var url="http://localhost:9000/Pedido/"+$("#plazas").val();
+		var url="http://localhost:10000/spedidos/Pedido";
 		
 		var datos=new Object();
-		datos.codigoProducto=$("#codigoProducto").val();
-		datos.hotel=$("#unidades").val();
-		datos.total=$("#total").val();
-		datos.fechaPedido=$("#fechaPedido").val();		
+		datos.codigoProducto=$("#producto").val();
+		datos.unidades=$("#unidades").val();
+		//alert(JSON.stringify(datos));
 		$.ajax({method:"POST",
 			    url: url,
 			    data: JSON.stringify(datos),
@@ -57,13 +56,13 @@
 		<br/>
 		<div class="form-group">
 		<label>Producto</label>
-		<select  id="hotel"  class="form-control" style="width:80%">
+		<select  id="producto"  class="form-control" style="width:80%">
 		</select>
 		</div>
 		
 		<div class="form-group">
 		<label>Unidades</label>
-		<input type="number" min="0" id="plazas" class="form-control" style="width:80%" onblur="cargarProductos();"/>
+		<input type="number" min="0" id="unidades" class="form-control" style="width:80%" onblur="cargarProductos();"/>
 		
 		</div>
 		<br/>

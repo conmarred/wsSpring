@@ -1,5 +1,6 @@
 package service;
 
+import java.sql.Timestamp;
 import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
@@ -26,14 +27,22 @@ public class PedidosServiceImpl implements PedidosService {
 
 	@Override
 	public void altaPedido(Pedido pedido) {
-		ResponseEntity<String> response = template.exchange(urlBase+"Producto/{codigoProducto}/{unidades}",
+		ResponseEntity<String> response = template.exchange(urlBase+"Producto/"+pedido.getCodigoProducto()+"/"+pedido.getUnidades(),
 				HttpMethod.PUT,
 				null, 
-				String.class,
-				pedido.getCodigoProducto(),
-				pedido.getUnidades());
+				String.class);
 		String cuerpo = response.getBody();
+		
+		ResponseEntity<Double> response2 =template.exchange(urlBase+"Producto/"+pedido.getCodigoProducto(), 
+				HttpMethod.GET,
+				null,
+				double.class);
+		
 		if(cuerpo.equals("true")) {
+			Long date = System.currentTimeMillis();
+			Timestamp time = new Timestamp(date);
+			pedido.setFechaPedido(time);
+			pedido.setTotal(response2.getBody()*pedido.getUnidades());
 			pedidosDao.save(pedido);
 		}
 	}

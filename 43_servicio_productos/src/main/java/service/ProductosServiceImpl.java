@@ -39,8 +39,8 @@ public class ProductosServiceImpl implements ProductosService {
 	@Override
 	public boolean actualizaStock(Integer codigoProducto, Integer unidades) {
 		Producto aux = productosDao.findById(codigoProducto).orElse(null);
-		if(aux!=null) {
-			aux.setStock(unidades);
+		if(aux!=null && aux.getStock()>= unidades) {
+			aux.setStock(aux.getStock()-unidades);
 			productosDao.save(aux);
 			return true;
 		}else {
